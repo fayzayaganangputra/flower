@@ -1,11 +1,18 @@
-body{
+body {
+  margin: 0;
+  padding: 0;
   background-color: #F6CFCA;
+  overflow: hidden; /* Menghindari scroll */
 }
 
-#canvas{
+#canvas {
   position: absolute;
-  top: 10%;
-  left: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw; /* Mengisi lebar viewport */
+  height: 100vh; /* Mengisi tinggi viewport */
+  z-index: -1; /* Menempatkan canvas di bawah konten */
 }
 
 [type="range"] {
